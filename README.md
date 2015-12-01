@@ -88,9 +88,7 @@ I like to have my website content centered with some space on each side, and Fou
 Some things, like [alert boxes](http://foundation.zurb.com/sites/docs/callout.html#making-closable), you need to install Foundation's Javascript files in order to use. Here's how:
 
 1. Create a folder in `public` called `js`
-2. Copy the entire contents of the Foundation `js` folder into your `js` folder
-3. In the `head` section of your `layout.erb` file, require `modernizer.js`: <br>
-`<script src="/js/vendor/modernizr.js"></script>`
+2. Copy the `foundation.min.js` and the entire `vendor` folder from Foundation's `js` folder into your own `js` folder
 4. Right before the closing `body` tag in your `layout.erb` file, require jquery and foundation's main js file:<br>
 `<script src="/js/vendor/jquery.js"></script>`<br>
 `<script src="/js/foundation.min.js"></script>`<br>
