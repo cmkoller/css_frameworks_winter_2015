@@ -25,10 +25,9 @@ CSS frameworks:
 
 ## How to use Foundation
 
-1. First, [download it here!](http://foundation.zurb.com/develop/download.html)
-2. Copy css/foundation.min.css and css/normalize.css into your project's stylesheets folder
+1. First, [download it here!](http://foundation.zurb.com/sites/download.html/)
+2. Copy css/foundation.min.css into your project's stylesheets folder
 3. Link to the stylesheets from your layout.erb file **in this order:**
-  * normalize.css
   * foundation.min.css
   * your own stylesheets!
 
@@ -37,7 +36,7 @@ Bam! You're up and running!
 Just by having it installed, Foundation gives you a whole new look - but don't stop there!
 
 #### Some Resources:
-**[Foundation documentation](http://foundation.zurb.com/docs/):**
+**[Foundation documentation](http://foundation.zurb.com/sites/docs/):**
 This will become your new best friend! All the tools are explained with examples via the bar on the left - browse through to get a sense of what Foundation can do for you. Example code abounds - use it!
 
 **[Foundation templates](http://foundation.zurb.com/templates.html):**
@@ -46,7 +45,7 @@ Mostly use these as inspiration for how to use Foundation. Don't go copying an e
 **Inspect Element:**
 You should be using this all. The. Time. Right click the webpage and hit "Inspect Element", or use Cmd + Opt + I. Click on an HTML element to see the styling that is applied to it!
 
-#### The [Foundation grid system](http://foundation.zurb.com/docs/components/grid.html)
+#### The [Foundation grid system](http://foundation.zurb.com/sites/docs/grid.html)
 This allows you to use HTML classes to format the layout of your page! By adding `class="blah"` to your HTML element, you get all the nice formatting that Foundation provides for that class.
 
 Foundation imagines that every element of the page is divided into rows and columns. This allows you to specify what sort of space you want your content to take up! You can add rows all you want. For columns, Foundation divides every element into 12 imaginary units of space - you use this to specify what width you want your elements.
@@ -59,17 +58,16 @@ Here are some of the classes you'll use:
 - `small-#`: This is how you pick how wide your columns are. Remember, every parent element is divided into 12 imaginary units. `small-#` specifies how many of those units you want your column to take up. If I write `small-3`, my column will be 3 units wide, or 25% the width of the parent element. `small-12` will take up the full width of my parent element.
 - `medium-#`, `large-#`: the "small" part of the above class means "with small screens, do this". Here you can specify different widths for medium and large screens! This will mean your layout changes depending on screen size. (Yay mobile-friendly design!)
 
-Check out the [docs](http://foundation.zurb.com/docs/components/grid.html) for more useful classes like offsetting your rows, centering columns, etc.
+Check out the [docs](http://foundation.zurb.com/sites/docs/grid.html) for more useful classes like offsetting your rows, centering columns, etc.
 
 #### Useful basic features to check out:
-- **[Utility classes](http://foundation.zurb.com/docs/utility-classes.html):** these give you handy all-around tools to use - like text alignment!
-- **[Forms](http://foundation.zurb.com/docs/components/forms.html):** they can be so beautiful!
-- **[Buttons](http://foundation.zurb.com/docs/components/buttons.html):** make everything nicer.
-- **[Inline lists](http://foundation.zurb.com/docs/components/inline_lists.html)** can be pretty handy!
-- **[Panels](http://foundation.zurb.com/docs/components/panels.html)** help visually organize content on your site.
-- **[Typography](http://foundation.zurb.com/docs/components/typography.html):** Foundation lets you do some cool useful things with your text!
-- **[Tables](http://foundation.zurb.com/docs/components/tables.html):** Foundation makes them beautifulll.
-- **[Pretty](http://foundation.zurb.com/docs/components/sidenav.html) [nav bars](http://foundation.zurb.com/docs/components/icon-bar.html):** See the [templates page](ttp://foundation.zurb.com/templates.html) for more pretty nav ideas!
+- **[Typography helper classes](http://foundation.zurb.com/sites/docs/typography-helpers.html):** these give you handy all-around tools to use - like text alignment and un-bulleted lists!
+- **[Visibility](http://foundation.zurb.com/sites/docs/visibility.html) and [float](http://foundation.zurb.com/sites/docs/float-classes.html) helper classes:** control what elements are visible and where they float around on the page!
+- **[Forms](http://foundation.zurb.com/sites/docs/forms.html):** they can be so beautiful!
+- **[Buttons](http://foundation.zurb.com/sites/docs/button.html):** make everything nicer.
+- **[Callouts](http://foundation.zurb.com/sites/docs/callout.html)** make pretty colored boxes to help visually organize content on your site.
+- **[Tables](http://foundation.zurb.com/sites/docs/table.html):** Foundation makes them beautifulll.
+- **[Pretty nav bars](http://foundation.zurb.com/sites/docs/navigation.html):** See the [templates page](http://foundation.zurb.com/templates.html) for more pretty nav ideas!
 
 ## Extras!
 
@@ -87,7 +85,7 @@ I like to have my website content centered with some space on each side, and Fou
 ```
 
 #### Using JS-based features
-Some things, like [alert boxes](http://foundation.zurb.com/docs/components/alert_boxes.html), you need to install Foundation's Javascript files in order to use. Here's how:
+Some things, like [alert boxes](http://foundation.zurb.com/sites/docs/callout.html#making-closable), you need to install Foundation's Javascript files in order to use. Here's how:
 
 1. Create a folder in `public` called `js`
 2. Copy the entire contents of the Foundation `js` folder into your `js` folder
@@ -100,11 +98,3 @@ Some things, like [alert boxes](http://foundation.zurb.com/docs/components/alert
 `<script>`<br>
 `$(document).foundation();`<br>
 `</script>`<br>
-
-##### Some cool JS-based features:
-- [Tool for creating equal-height columns](http://foundation.zurb.com/docs/components/equalizer.html)
-- [Awesome](http://foundation.zurb.com/docs/components/topbar.html). [nav](http://foundation.zurb.com/docs/components/offcanvas.html). [bars](http://foundation.zurb.com/docs/components/magellan.html).
-- [Cool dropdown buttons](http://foundation.zurb.com/docs/components/dropdown_buttons.html)
-- [Tabs](http://foundation.zurb.com/docs/components/tabs.html#tabs-deeplink-3)
-- [Pop-up lightboxes, aka "modals"](http://foundation.zurb.com/docs/components/reveal.html)
-- [Cool "walkthroughs" of your page](http://foundation.zurb.com/docs/components/joyride.html)
